@@ -137,6 +137,30 @@
             </div>
           </section>
 
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 4</h4>
+                <h6>Will you create specific zones where AVs can stop to pick-up and drop-off passengers on streets that are under the control of the City?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q6" name="Q6"/> Yes I want authority
+              </div>
+            </div>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 5</h4>
+                <h6>Will you create specific zones where AVs can stop to pick-up and drop-off passengers on streets that are under the control of the State?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q7" name="Q7"/> Yes I want authority
+              </div>
+            </div>
+          </section>
+
           <section>
             <div style="text-align: center;">
               <button class="button" onclick="saveData()" formaction="https://bostonavthority.github.io/page2.html" >Submit</button>
@@ -205,6 +229,24 @@
     }
     if (q5.checked == false) {
         localStorage.setItem("Q", "no");
+    }
+
+    // question 6
+    var q6 = document.getElementById("Q6");
+    if (q6.checked == true) {
+        localStorage.setItem("Q6", "yes");
+    }
+    if (q6.checked == false) {
+        localStorage.setItem("Q6", "no");
+    }
+
+    // question 7
+    var q7 = document.getElementById("Q7");
+    if (q7.checked == true) {
+        localStorage.setItem("Q7", "yes");
+    }
+    if (q7.checked == false) {
+        localStorage.setItem("Q7", "no");
     }
 
     window.location = "https://bostonavthority.github.io/page2.html";
