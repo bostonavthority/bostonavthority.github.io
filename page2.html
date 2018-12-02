@@ -121,6 +121,31 @@
             </div>
         </section>
 
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 4 Recommendation</h4>
+                <p id="Q5">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q5d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 5 Recommendation</h4>
+                <p id="Q7">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q7d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
+
         </div>
         <p></p>
         <p></p>
@@ -176,7 +201,27 @@
       document.getElementById("Q5d").innerHTML = "Proposed Draft Language: City of Boston Traffic Rules and Regulations, Article IV, Section 11. Section 11 of Article IV of the City of Boston Traffic Rules and Regulations is hereby amended by inserting the following as a sixth paragraph: “No driver shall stop, stand, or park any vehicle in any loading zone with the following exceptions: 6.  Autonomous Vehicles stopped for a maximum of twenty (20) minutes while in the process of making a pickup or delivery.”"
     }
     if (q5 === "no") {
-      document.getElementById("Q1").innerHTML = "You do not want to adapt current loading zones to AV use."
+      document.getElementById("Q5").innerHTML = "You do not want to adapt current loading zones to AV use."
+    }
+
+    // Question 6
+    q6 = localStorage.getItem("Q6")
+    if (q6 === "yes") {
+      document.getElementById("Q6").innerHTML = "You have the authority to create loading zones. See 1929 Mass. Acts, ch. 263, § 2A, as amended. However, a change in practices may need to occur, since currently loading zones are only given out “upon written application by an abutting owner or occupant,” and there is no clear definition for what qualifies as a “loading zone.” Id. You also have authority regarding rules and regulations on the movement, stopping, or standing of vehicles on all or any streets, ways, highways, roads, and parkways under the control of the city. See 1929 Mass. Acts, ch. 263, § 2. No explicit amendment is required. However, the following amendment is recommended to create more legal certainty."
+      document.getElementById("Q6d").innerHTML = "Proposed Draft Language: Amendment to Section 2A of Chapter 263 of the Acts of 1929, second paragraph:“To enable the creation of specific zones where autonomous vehicles can stop to pick-up and drop-off passengers, the commissioner of transportation shall have exclusive authority to designate parts of streets, ways, highways, roads and parkways under the control of the city as AV stop zones.” "
+    }
+    if (q6 === "no") {
+      document.getElementById("Q6").innerHTML = "You do not want to create specific zones where AVs can stop to pick-up and drop-off passengers on streets that are under the control of the City."
+    }
+
+    // Question 7
+    q7 = localStorage.getItem("Q7")
+    if (q7 === "yes") {
+      document.getElementById("Q7").innerHTML = "You have no current authority. See 1929 Mass. Acts, ch. 263, § 2A & §2, para. 2, as amended. An explicit amendment is required."
+      document.getElementById("Q7d").innerHTML = "Proposed Draft Language: Amendment to Section 2A of Chapter 263 of the Acts of 1929, second paragraph: “To enable the creation of specific zones where autonomous vehicles can stop to pick-up and drop-off passengers, the commissioner of transportation shall have exclusive authority to designate parts of streets, ways, highways, roads and parkways under the control of the city or the Commonwealth as AVstop zones."
+    }
+    if (q7 === "no") {
+      document.getElementById("Q7").innerHTML = "You do not want to create specific zones where AVs can stop to pick-up and drop-off passengers on streets that are under the control of the State."
     }
 
 
