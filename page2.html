@@ -169,6 +169,70 @@
             </div>
         </section>
 
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 7 Recommendation</h4>
+                <p id="Q10">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 8 Recommendation</h4>
+                <p id="Q11">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q11d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 9 Recommendation</h4>
+                <p id="Q12">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 10 Recommendation</h4>
+                <p id="Q13">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 11 Recommendation</h4>
+                <p id="Q14">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 12 Recommendation</h4>
+                <p id="Q15">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q15d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
 
         </div>
         <p></p>
@@ -267,6 +331,68 @@
     if (q8 === "no") {
       document.getElementById("Q8").innerHTML = "You do not want to allow businesses to independently apply for pick-up and drop-off area permits."
     }
+
+    // Question 10
+    q10 = localStorage.getItem("Q10")
+    if (q10 === "yes") {
+      document.getElementById("Q10").innerHTML = "The Boston Transportation Department has “exclusive authority” over rules and regulations related to the exclusion of vehicular street traffic “from, all or any streets, ways, highways, roads and parkways, under the control of the city.” 1929 Mass. Acts ch. 263, § 2, para 2, as amended by 1964 Mass. Acts ch. 387."
+    }
+    if (q10 === "no") {
+      document.getElementById("Q10").innerHTML = "You do not want to exclude AVs from some or any of the streets under the control of the City"
+    }
+
+    // Question 11
+    q11 = localStorage.getItem("Q11")
+    if (q11 === "yes") {
+      document.getElementById("Q11").innerHTML = "You cannot exclude AVs from some or any of the streets or highways under the control of the State. The Massachusetts Department of Highways currently has the authority to exclude certain vehicles from limited access and express state highways, see Mass. Gen. Laws ch. 85, § 2B, and exclude persons and vehicles, including low-speed vehicles, from state highways or portions thereof, see Mass. Gen. Laws ch. 85, § 2E. Explicit amendment is required."
+      document.getElementById("Q11d").innerHTML = "Proposed Draft Language: Amendment to Chapter 90 of Massachusetts General Laws to replace section 18 with the following paragraph: “Notwithstanding the provisions of sections 2B and 2E of chapter 85, the transportation commission of the city of Boston, on ways within their control and state highways or portions thereof, provided that the Massachusetts Department of Transportation consents thereto, may make special regulations as to the speed of motor vehicles and may prohibit the use of such vehicles altogether on such ways.”"
+    }
+    if (q11 === "no") {
+      document.getElementById("Q11").innerHTML = "You do not want to exclude AVs from some or any of the streets under the control of the State"
+    }
+
+    // Question 12
+    q12 = localStorage.getItem("Q12")
+    if (q12 === "yes") {
+      document.getElementById("Q12").innerHTML = "You have authority to prohibit or restrict the parking of motor vehicles on public ways. See City of Boston Traffic Rules and Regulations Article IV, § 1. Further, the Boston Transportation Department has “exclusive authority” over rules and regulations related to the exclusion of vehicular street traffic “from, all or any streets, ways, highways, roads and parkways, under the control of the city.” 1929 Mass. Acts ch. 263, § 2, para 2, as amended by 1964 Mass. Acts ch. 387. No explicit amendment is required. "
+    }
+    if (q12 === "no") {
+      document.getElementById("Q12").innerHTML = "You do not want to exclude AVs from certain parking spots"
+    }
+
+    // Question 13
+    q13 = localStorage.getItem("Q13")
+    if (q13 === "yes") {
+      document.getElementById("Q13").innerHTML = "You have the authority to create AV-specific parking spots. See Chapter 263, Acts of 1929 as amended by Section 13, Chp. 190 of the Acts of 1982.  No explicit amendment is likely required."
+    }
+    if (q13 === "no") {
+      document.getElementById("Q13").innerHTML = "You do not want to create AV-specific parking spots"
+    }
+
+    // Question 14
+    q14 = localStorage.getItem("Q14")
+    if (q14 === "yes") {
+      document.getElementById("Q14").innerHTML = "You have wide authority over the regulation of your curbs and parking spaces. No explicit amendment would be required to add new parking signs that would price curb spaces more dynamically, raise the prices of current parking meters or discriminate pricing between manned and unmanned. vehicles. However, you may want to create regulations that would help to manage the curb space more dynamically. This may include pricing based on congestion, occupancy of vehicles, electric v. non-electric vehicles, or manned v. unmanned vehicles. See Chapter 263, Acts of 1929 as amended by Section 13, Chp. 190 of the Acts of 1982: Provides the Boston Transportation Department the authority to “adopt, amend, alter and repeal rules and regulations, not inconsistent with general law as modified by this act, relative to vehicular street traffic in the city, and to the movement, stopping, standing or parking of vehicles on, and their exclusion from, all or any streets, ways, highways, roads and parkways, under the control of the city...” No amendment is required to adopt laws relating to the parking of AVs. See Chapter 263, Acts of 1929 as amended by  Section 13A, Chp. 190 of the Acts of 1982: “The commission may adopt, amend and repeal rules and regulations prescribing a penalty, set by ordinance with the approval of the mayor and city council, for any violation of a rule or regulation adopted under this section or promulgated under section two B.”  These penalties are to be collected by the Parking Clerk. See City of Boston Municipal Code, § 6-6.3. Further, this provision outlines exclusions for disabled veterans or handicapped persons. No amendment is likely required to adopt specific penalties to be incurred only by AVs. See Mass. Gen. Laws chp. 90, section 20A1-2: Provides the City of Boston authority to issue parking violation tickets and establish and collect fines up to $50 for a parking violation. No amendment is required to collect similar fees from AVs. See City of Boston Traffic Rules and Regulations, Article IV, IV-A: The City of Boston has the authority to implement several parking specific rules. No amendment is required to adapt more dynamic rules that would fluctuate more frequently throughout the day."
+
+    }
+    if (q14 === "no") {
+      document.getElementById("Q14").innerHTML = "You do not want to regulate the curbs more flexibly to support AV use"
+    }
+
+    // Question 15
+    q15 = localStorage.getItem("Q15")
+    if (q15 === "yes") {
+      document.getElementById("Q15").innerHTML = "You have the authority, but may want to add in an explicit amendment, mirroring the explicit amendment that was created for bus lanes or bicycle paths. Under the City of Boston Municipal Code § 11-6, the Public Works Department may “construct all streets.” For example, Mass. Gen. Laws ch. 40, § 21, subsection 16B gives the City the authority to create bicycle lanes. See Mass. Gen. Laws ch. 82, § 34 (allowing the City to “reserve” portions of public ways for horseback riders, bicycle paths, and street railways); see also City of Boston Traffic Rules and Regulations, Article VII, Section 7 (discussing exclusive/restricted bus lanes)."
+      document.getElementById("Q15d").innerHTML = "Proposed Draft Language: Amendment to add Section 8A of Article VII of City of Boston Traffic Rules and Regulations: Section 8A. No vehicle shall be operated in the designated lane or lanes set aside for the sole purpose of operating autonomous vehicles, unless otherwise regulated or posted by an official traffic sign, signal, marking or other device, erected and maintained, or caused to be made, erected and maintained by the Commissioner of Transportation. Or, Amendment to add Section 43 of Chapter 82 of Mass. Gen. Laws is hereby created: Section 43. “The board or officers authorized to lay out highways or town ways may lay out, construct and maintain autonomous vehicle lanes under the provisions of law relative to the laying out, construction and maintenance of public ways.”"
+    }
+    if (q15 === "no") {
+      document.getElementById("Q15").innerHTML = "You do not want to create AV-specific lanes"
+    }
+
+
+
+
+
 
 
     </script>
