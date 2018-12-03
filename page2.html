@@ -145,6 +145,30 @@
             </div>
         </section>
 
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 6 Recommendation</h4>
+                <p id="Q8">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q8d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="Q9box" style="display:none">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 8A Recommendation</h4>
+                <p id="Q9">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q9d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
 
         </div>
         <p></p>
@@ -222,6 +246,25 @@
     }
     if (q7 === "no") {
       document.getElementById("Q7").innerHTML = "You do not want to create specific zones where AVs can stop to pick-up and drop-off passengers on streets that are under the control of the State."
+    }
+
+    // Question 2
+    q8 = localStorage.getItem("Q8")
+    if (q8 === "yes") {
+      document.getElementById("Q8").innerHTML = "You have authority. See Chp. 263 of the Acts of 1929 as amended by Acts of 1960, Ch. 84. An explicit amendment is required to adapt these loading zones to AV-specific uses. You may also want to create a more streamlined renewal system, so that the permits are easily renewable year to year. This could include a presumption of renewal pending the payment of the next annual permit fee and the City’s yearly review. "
+      // Question 9 conditional on 8
+      document.getElementById("Q9box").style.display = "block"
+      q9 = localStorage.getItem("Q9")
+      if (q9 === "yes"){
+        document.getElementById("Q9").innerHTML = "For state-owned streets (i.e., highways), you will need to petition the Massachusetts Department of Highways for the alteration or construction of a new or existing highway. See Mass. Gen. Laws ch. 81, §§ 4, 5, 6, 12. The Commonwealth retains its authority over highways even when they go through cities. Therefore, it is important for the City to identify what are the state-controlled highways within its city borders and to cooperate closely with the Massachusetts Department of Highways. However, even if the City petitions to the Department for the alteration or construction of a new or existing highway, the Department might still refuse to act."
+        document.getElementById("Q9d").innerHTML = "Proposed Draft Language: Amendment to Section 2A of Chapter 263 of the Acts of 1929, third paragraph:“Every designation of an AV stop zone under this section shall take effect on such date, not later than one month after it is made, and expire on such date, not later than one year after its effective date, as said commissioner shall determine, and may at any time, after reasonable notice and hearing, be revoked by said commissioner if he deems the continuation of such zone to be inconsistent with the public interest.”"
+      }
+      if (q9 === "no"){
+        document.getElementById("Q9").innerHTML = "You will not collect fees for these AV stop zone permits."
+      }
+    }
+    if (q8 === "no") {
+      document.getElementById("Q8").innerHTML = "You do not want to allow businesses to independently apply for pick-up and drop-off area permits."
     }
 
 
