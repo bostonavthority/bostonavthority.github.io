@@ -233,6 +233,26 @@
             </div>
         </section>
 
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 13 Recommendation</h4>
+                <p id="Q16">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="Q17box" style="display:none">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 13a Recommendation</h4>
+                <p id="Q17">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
+
 
         </div>
         <p></p>
@@ -265,7 +285,7 @@
         document.getElementById("Q3d").innerHTML = "One solution would be to amend Mass. Gen. Laws ch. 81, § 4 (Petition) by adding text that would be aimed at ensuring closer cooperation between the Department, a petitioning city, and other stakeholders, such as AV providers and TNCs. “If county commissioners, aldermen or selectmen adjudge that public necessity and convenience require that the commonwealth lay out and take charge of a new or existing way as a highway in whole or in part, in their county, city or town, they may apply, by a written petition, to the department, requesting that said way be laid out and taken charge of by the commonwealth. The department shall analyze the petition without any undue delay and shall work with petitioners and, if possible, with other stakeholders as defined by the department, to reach a solution that would be acceptable for all parties involved.” Note that the effect of the new provisions will be mostly instructive, providing more of a guidelines on how to evaluate such petitions. More detailed procedures, defining the decision process and possible appeals would be beneficial for the City, but convincing the Commonwealth to enact such regulations, and thus significantly reduce its powers, might be an insurmountable task."
       }
       if (q3 === "no"){
-        document.getElementById("Q3").innerHTML = "The streets you want to alter or relocate are not owned by the Commonwealth."
+        document.getElementById("Q3").innerHTML = "The streets you want to alter or relocate were not, at any point in the past, constructed or improved with money furnished by the Commonwealth."
       }
       // Question 4 conditional on 2
       document.getElementById("Q4box").style.display = "block"
@@ -312,7 +332,7 @@
       document.getElementById("Q7").innerHTML = "You do not want to create specific zones where AVs can stop to pick-up and drop-off passengers on streets that are under the control of the State."
     }
 
-    // Question 2
+    // Question 8
     q8 = localStorage.getItem("Q8")
     if (q8 === "yes") {
       document.getElementById("Q8").innerHTML = "You have authority. See Chp. 263 of the Acts of 1929 as amended by Acts of 1960, Ch. 84. An explicit amendment is required to adapt these loading zones to AV-specific uses. You may also want to create a more streamlined renewal system, so that the permits are easily renewable year to year. This could include a presumption of renewal pending the payment of the next annual permit fee and the City’s yearly review. "
@@ -387,6 +407,24 @@
     }
     if (q15 === "no") {
       document.getElementById("Q15").innerHTML = "You do not want to create AV-specific lanes"
+    }
+
+    // Question 16
+    q16 = localStorage.getItem("Q16")
+    if (q16 === "yes") {
+      document.getElementById("Q16").innerHTML = "You can introduce a new licensing regime for privately-owned AVs. Massachusetts allows localities, including the Boston Transportation Commission, to “make rules and orders, for the regulation of carriages and vehicles” and “set and receive an annual fee for each license granted to a person to use any such carriage or vehicle therein.” Mass. Gen. Laws ch. 40, § 22. If you want to prevent privately-owned AVs from entering the City, then you can do so using the Massachusetts Department of Highways and Boston Transportation Department’s existing powers to exclude motor vehicles from public ways and highways. See Mass. Gen. Laws ch. 90, § 18. "
+      // Question 17 conditional on 16
+      document.getElementById("Q17box").style.display = "block"
+      q17 = localStorage.getItem("Q17")
+      if (q17 === "yes"){
+        document.getElementById("Q17").innerHTML = "You have the authority to seek to receive an annual fee from the issuing of AV licenses. Any city can “set and receive an annual fee for each license granted” to a vehicle for use within the City. See Mass. Gen. Laws ch. 40, § 22. Explicit amendment may be required to ensure that this provision covers AV licenses as well."
+      }
+      if (q17 === "no"){
+        document.getElementById("Q17").innerHTML = "You do not want to seek to receive an annual fee from the issuing of AV licenses"
+      }
+    }
+    if (q16 === "no") {
+      document.getElementById("Q16").innerHTML = "You do not want to introduce a new licensing regime for privately-owned AVs."
     }
 
 
