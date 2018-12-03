@@ -161,6 +161,31 @@
             </div>
           </section>
 
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 6</h4>
+                <h6>Will you allow businesses to independently apply for pick-up and drop-off area permits?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q8" name="Q8" onclick="show9()"/> Yes I want authority
+              </div>
+            </div>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" style="display:none" id="Q9box">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 6a</h4>
+                <h6>Will you look to collect fees for these AV stop zone permits?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q9" name="Q9"/> Yes I want authority
+              </div>
+            </div>
+          </section>
+
+
           <section>
             <div style="text-align: center;">
               <button class="button" onclick="saveData()" formaction="https://bostonavthority.github.io/page2.html" >Submit</button>
@@ -183,6 +208,16 @@
         } else {
             box3.style.display = "none";
             box4.style.display = "none";
+        }
+    }
+
+    function show9(){
+        var q8 = document.getElementById("Q8")
+        var box9 = document.getElementById("Q9box")
+        if (q8.checked === true){
+            box9.style.display = "block"
+        } else {
+            box9.style.display = "none";
         }
     }
 
@@ -247,6 +282,23 @@
     }
     if (q7.checked == false) {
         localStorage.setItem("Q7", "no");
+    }
+
+    // Question 8
+    var q8 = document.getElementById("Q8");
+    if (q8.checked == true) {
+        localStorage.setItem("Q8", "yes");
+        // Question 9 conditional on 8
+        var q9 = document.getElementById("Q9");
+        if (q9.checked == true) {
+            localStorage.setItem("Q9", "yes");
+        }
+        if (q9.checked == false) {
+            localStorage.setItem("Q9", "no");
+        }
+    }
+    if (q8.checked == false) {
+        localStorage.setItem("Q8", "no");
     }
 
     window.location = "https://bostonavthority.github.io/page2.html";
