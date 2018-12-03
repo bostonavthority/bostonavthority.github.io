@@ -257,6 +257,32 @@
             </div>
           </section>
 
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 13</h4>
+                <h6>Do you want to introduce a new licensing regime for privately-owned AVs?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q16" name="Q16" onclick="show17()"/> Yes I want authority
+              </div>
+            </div>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" style="display:none" id="Q17box">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 13a</h4>
+                <h6>Will you seek to receive an annual fee from the issuing of AV licenses?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q17" name="Q17"/> Yes I want authority
+              </div>
+            </div>
+          </section>
+
+
+
 
 
 
@@ -293,6 +319,16 @@
             box9.style.display = "block"
         } else {
             box9.style.display = "none";
+        }
+    }
+
+    function show17(){
+        var q16 = document.getElementById("Q16")
+        var box17 = document.getElementById("Q17box")
+        if (q16.checked === true){
+            box17.style.display = "block"
+        } else {
+            box17.style.display = "none";
         }
     }
 
@@ -428,6 +464,23 @@
     }
     if (q15.checked == false) {
         localStorage.setItem("Q15", "no");
+    }
+
+    // Question 16
+    var q16 = document.getElementById("Q16");
+    if (q16.checked == true) {
+        localStorage.setItem("Q16", "yes");
+        // Question 17 conditional on 16
+        var q17 = document.getElementById("Q17");
+        if (q17.checked == true) {
+            localStorage.setItem("Q17", "yes");
+        }
+        if (q17.checked == false) {
+            localStorage.setItem("Q17", "no");
+        }
+    }
+    if (q16.checked == false) {
+        localStorage.setItem("Q16", "no");
     }
 
     window.location = "https://bostonavthority.github.io/page2.html";
