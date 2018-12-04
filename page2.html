@@ -253,6 +253,95 @@
             </div>
         </section>
 
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 14 Recommendation</h4>
+                <p id="Q18">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q18d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 15 Recommendation</h4>
+                <p id="Q19">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q19d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 16 Recommendation</h4>
+                <p id="Q20">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q20d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 17 Recommendation</h4>
+                <p id="Q21">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 18 Recommendation</h4>
+                <p id="Q22">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 19 Recommendation</h4>
+                <p id="Q23">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q23d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 19 Recommendation</h4>
+                <p id="Q23">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q23d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 20 Recommendation</h4>
+                <p id="Q24">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
 
         </div>
         <p></p>
@@ -406,7 +495,7 @@
       document.getElementById("Q15d").innerHTML = "Proposed Draft Language: Amendment to add Section 8A of Article VII of City of Boston Traffic Rules and Regulations: Section 8A. No vehicle shall be operated in the designated lane or lanes set aside for the sole purpose of operating autonomous vehicles, unless otherwise regulated or posted by an official traffic sign, signal, marking or other device, erected and maintained, or caused to be made, erected and maintained by the Commissioner of Transportation. Or, Amendment to add Section 43 of Chapter 82 of Mass. Gen. Laws is hereby created: Section 43. “The board or officers authorized to lay out highways or town ways may lay out, construct and maintain autonomous vehicle lanes under the provisions of law relative to the laying out, construction and maintenance of public ways.”"
     }
     if (q15 === "no") {
-      document.getElementById("Q15").innerHTML = "You do not want to create AV-specific lanes"
+      document.getElementById("Q15").innerHTML = "You do not want to create AV-specific lanes."
     }
 
     // Question 16
@@ -427,6 +516,75 @@
       document.getElementById("Q16").innerHTML = "You do not want to introduce a new licensing regime for privately-owned AVs."
     }
 
+    // Question 18
+    q18 = localStorage.getItem("Q18")
+    if (q18 === "yes") {
+      document.getElementById("Q18").innerHTML = "You can’t create a local licensing requirement for shared AVs. Currently, the Massachusetts Department of Public Utilities (DPU) has exclusive authority over permitting and regulating TNCs, defined as any “entity that uses a digital network to connect riders to drivers to pre-arrange and provide transportation.” Mass. Gen. Laws ch. 159A1/2. State law expressly forbids cities from requiring “additional licenses” for TNCs and TNC drivers. See Mass. Gen. Laws ch. 159A1/2, § 1, 10. You will need to ask the State to carve out the City of Boston from the expansive regulation of TNCs and petition the State for explicit local authority over AV licensing at the municipal level (like current regulation of taxis and livery cabs, see e.g., Mass. Gen. Laws ch. 40, § 22)."
+      document.getElementById("Q18d").innerHTML = "Proposed Draft Language: Amendment to Section 10, Chapter 159A1/2 of the Mass. Gen. Laws:“No municipality or other local or state entity, except the Massachusetts Port Authority and the City of Boston, may: (i) impose a tax on or require any additional license for a [TNC]...” Amendment to Section 22, Chapter 40 of the Mass. Gen. Laws: “Notwithstanding the provisions of section 10 of chapter 159A1/2, a city or town may require additional licenses for vehicles that utilize an Automated Driving System (ADS), meaning technology installed on a motor vehicle that has the capability, on a part-time or full-time basis, to drive the vehicle without the need for supervision of the driving environment by a human driver or operator, whether or not a human driver or operator is in the vehicle.” Note: definition of “ADS” is taken from Model SAVe Act."
+    }
+    if (q18 === "no") {
+      document.getElementById("Q18").innerHTML = "You do not want to create create a local licensing requirement for shared AVs."
+    }
+
+    // Question 19
+    q19 = localStorage.getItem("Q19")
+    if (q19 === "yes") {
+      document.getElementById("Q19").innerHTML = "You probably cannot impose a congestion fee or other road-use assessment on shared AVs, but you already receive funds from the State for TNCs. Until 2027, Massachusetts requires TNC operators to contribute a $0.20 per-ride assessment to the State’s Transportation Infrastructure Enhancement Trust Fund, half of which DPU will distribute to cities based proportionately on the number of TNC rides that originated within that city. See 2016 Mass. Acts ch. 187, § 8. Additionally, State law provides that no municipal or local agency can impose a tax on TNC companies, vehicles, or drivers for “facilitating or providing prearranged rides.” Mass. Gen. Laws ch. 159A1/2, § 10. "
+
+      document.getElementById("Q19d").innerHTML = "Proposed Draft Language: Amendment to replace Section 22, Chapter 40 of the Mass. Gen. Laws: “Notwithstanding the provisions of section 10 of chapter 159A1/2, a city or town may impose an annual fee for each license granted to vehicles that utilize an Automated Driving System (ADS), meaning technology installed on a motor vehicle that has the capability, on a part-time or full-time basis, to drive the vehicle without the need for supervision of the driving environment by a human driver or operator, whether or not a human driver or operator is in the vehicle.”"
+    }
+    if (q19 === "no") {
+      document.getElementById("Q19").innerHTML = "You do not want to impose a congestion fee or other road-use assessment on shared AVs."
+    }
+
+    // Question 20
+    q20 = localStorage.getItem("Q20")
+    if (q20 === "yes") {
+      document.getElementById("Q20").innerHTML = "The City already has power to create traffic rules for the AVs. According to 1929 Mass. Acts, ch. 263, § 2, par. 2, the Commissioner of Transportation has exclusive authority to regulate vehicular street traffic in the city. However, please keep in mind that such traffic rules need to comply with the “Law of the Road” currently enacted under Mass. Gen. Laws ch. 89. "
+
+      document.getElementById("Q20d").innerHTML = "Proposed Draft Language: You might choose to redefine “driver” to include AVs for the purposes of Traffic Rules and Regulations: From model SAVE Act: “Automated Driving System” (ADS) means technology installed on a motor vehicle that has the capability, on a part-time or full-time basis, to drive the vehicle without the need for supervision of the driving environment by a human driver or operator, whether or not a human driver or operator is in the vehicle.” “When engaged, the ADS shall be considered the driver or operator for purposes of assessing conformance to applicable traffic or motor vehicle laws, and shall be deemed to be validly licensed to operate a motor vehicle and to satisfy all the requirements under M.G.L. Ch.90 Sec. 8 and M.G.L. Ch.90 Sec. 10, and any physical acts required by a driver or operator. No motor vehicle laws of this State shall be construed as prohibiting an ADS from being the operator or driver of a motor vehicle, and no motor vehicle laws of this State shall be construed as requiring a licensed human driver to operate a vehicle that is being operated by an ADS under this Section.”"
+    }
+    if (q20 === "no") {
+      document.getElementById("Q20").innerHTML = "You do not want to create traffic rules for the AVs."
+    }
+
+    // Question 21
+    q21 = localStorage.getItem("Q21")
+    if (q21 === "yes") {
+      document.getElementById("Q21").innerHTML = "Boston has the authority to enact temporary traffic rules. According to Traffic Rules and Regulations, City of Boston, Article IX, for purposes of trial, and up to 60 days, the Transportation Commission may make temporary rules regulating traffic or test under actual conditions. "
+    }
+    if (q21 === "no") {
+      document.getElementById("Q21").innerHTML = "You do not want to enact temporary traffic rules for the AVs for trial purposes."
+    }
+
+    // Question 22
+    q22 = localStorage.getItem("Q22")
+    if (q22 === "yes") {
+      document.getElementById("Q22").innerHTML = "For city-owned streets, the Public Improvement Commission is already required to record the “location and bounds” of rights of way whenever they are laid out, relocated, or altered and transmit them to the city clerk. Mass. Gen. Laws ch. 82, § 32. Likewise, the Massachusetts Department of Transportation is required to “prepare maps of the commonwealth on which shall be shown . . . the public ways and the state highways.” Mass. Gen. Laws ch. 81, § 1. The Department “may sell such maps or other maps prepared by it . . . at such prices and on such conditions as it may determine.” Id. Thus, Boston can request street location data on state-controlled highways, likely for a fee."
+    }
+    if (q22 === "no") {
+      document.getElementById("Q22").innerHTML = "You do not want to collect data about the location of existing streets, curbs, and rights of way in the City to facilitate digitization of streets."
+    }
+
+    // Question 23
+    q23 = localStorage.getItem("Q23")
+    if (q23 === "yes") {
+      document.getElementById("Q23").innerHTML = "You probably can require shared AV operators to share data with the City. Boston currently requires AV testers to sign MOUs that require them to share certain data captured by AV sensors upon the City’s request. See Template MOU for Autonomous Vehicle Testing in Boston, https://www.boston.gov/sites/default/files/document-file-01-2017/template-mou-for-av-testing.pdf However, Massachusetts may try to challenge the City’s power to collect data. The 2017 Act Regulating Transportation Network Companies currently authorizes the Commonwealth to collect ride data from TNCs. See Mass. Gen. Laws ch. 159A1/2, § 2(k). If AVs are eventually captured under the definition of TNCs, then the Commonwealth may try to preempt the City from collecting the same ride data from shared AV operators. In that case, the City should consider sending a Home Rule Petition to the Commonwealth for permission to collect the data if it wants to ensure that it is not preempted from doing so in the future."
+
+      document.getElementById("Q23d").innerHTML = "Proposed Draft Language: Amendment to Section 2(k), Chapter 159A1/2 of the Mass. Gen. Laws: “(k) In consultation with the division, a transportation network company shall provide its ride data to the Massachusetts Department of Transportation and the department shall cross-reference that data with its toll data to ensure that tolls incurred by a driver providing transportation network services through a digital network are paid at the commercial rate through the pay by plate system and through the electronic transponder system. The Massachusetts Department of Transportation shall, without charge, provide to any city or town, including the Boston transportation department, such data on rides originating within that city or town.” Alternative addition to Boston Municipal Code Section 16-15 (Use of Roadway for Vehicles) that is attached to City licensing of TNCs (based on Portland City Code):  Section 16-15.7 Autonomous Vehicles. “Any licensed for-hire autonomous vehicle shall provide relevant anonymized data to the Boston Transportation Department no later than the 5 business days after the last day of the previous month. The data collected by the City will be, except as otherwise required by law, kept confidential by the City, used only within the City, and not disclosed to third parties, in accordance with any applicable data-sharing agreement.”"
+    }
+    if (q23 === "no") {
+      document.getElementById("Q23").innerHTML = "You do not want to require shared AV operators to share data with the City."
+    }
+
+    // Question 24
+    q24 = localStorage.getItem("Q24")
+    if (q24 === "yes") {
+      document.getElementById("Q24").innerHTML = "You already have authority to digitize traffic signs, signals, markings, and other devices for the control of traffic on city streets. The Commissioner of transportation has the power to make, erect, and maintain traffic signs, signals, markings, and other devices for the control of street traffic in the City and for informing and warning the public as to rules and regulations. See 1929 Mass. Acts ch. 263, § 1B. The State Department of Highways on the other hand has the power to make and maintain signs, lights, signal systems, traffic devices, and parking meters on highways. See Mass. Gen. Laws ch. 85, § 2. No explicit amendment is required."
+    }
+    if (q24 === "no") {
+      document.getElementById("Q24").innerHTML = "You do not want to digitize traffic signs, signals, markings, and other devices for the control of traffic on city streets."
+    }
 
 
 
