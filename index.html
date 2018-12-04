@@ -365,6 +365,54 @@
             </div>
           </section>
 
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 21</h4>
+                <h6>Will you digitize traffic signs, signals, markings, and other devices for the control of traffic on state highways?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q25" name="Q25"/> Yes I want authority
+              </div>
+            </div>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 22</h4>
+                <h6>Would you want the state legislature to enact a comprehensive AV regulation?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q26" name="Q26"/> Yes I want authority
+              </div>
+            </div>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 23</h4>
+                <h6>Will you exclude street railway cars or trackless trolley vehicles of the metropolitan transit authority from any street in the City to fully pursue an autonomous future?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q27" name="Q27"/> Yes I want authority
+              </div>
+            </div>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 23</h4>
+                <h6>Do you wish to be able to remove AV’s that are parked or standing on streets in violation of existing regulations?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q28" name="Q28"/> Yes I want authority
+              </div>
+            </div>
+          </section>
+
           <section>
             <div style="text-align: center;">
               <button class="button" onclick="saveData()" formaction="https://bostonavthority.github.io/page2.html" >Submit</button>
@@ -622,6 +670,42 @@
     }
     if (q24.checked == false) {
         localStorage.setItem("Q24", "no");
+    }
+
+    // question 25
+    var q25 = document.getElementById("Q25");
+    if (q25.checked == true) {
+        localStorage.setItem("Q25", "yes");
+    }
+    if (q25.checked == false) {
+        localStorage.setItem("Q25", "no");
+    }
+
+    // question 26
+    var q26 = document.getElementById("Q26");
+    if (q26.checked == true) {
+        localStorage.setItem("Q26", "yes");
+    }
+    if (q26.checked == false) {
+        localStorage.setItem("Q26", "no");
+    }
+
+    // question 27
+    var q27 = document.getElementById("Q27");
+    if (q27.checked == true) {
+        localStorage.setItem("Q27", "yes");
+    }
+    if (q27.checked == false) {
+        localStorage.setItem("Q27", "no");
+    }
+
+    // question 28
+    var q28 = document.getElementById("Q28");
+    if (q28.checked == true) {
+        localStorage.setItem("Q28", "yes");
+    }
+    if (q28.checked == false) {
+        localStorage.setItem("Q28", "no");
     }
 
     window.location = "https://bostonavthority.github.io/page2.html";
