@@ -281,11 +281,89 @@
             </div>
           </section>
 
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 14</h4>
+                <h6>Do you want to create a local licensing requirement for shared AVs?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q18" name="Q18"/> Yes I want authority
+              </div>
+            </div>
+          </section>
 
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 15</h4>
+                <h6>Do you want to impose a congestion fee or other road-use assessment on shared AVs?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q19" name="Q19"/> Yes I want authority
+              </div>
+            </div>
+          </section>
 
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 16</h4>
+                <h6>Do you want to create traffic rules for the AVs?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q20" name="Q20"/> Yes I want authority
+              </div>
+            </div>
+          </section>
 
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 17</h4>
+                <h6>Do you want to enact temporary traffic rules to accommodate AVs for trial purposes?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q21" name="Q21"/> Yes I want authority
+              </div>
+            </div>
+          </section>
 
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 18</h4>
+                <h6>Do you want to collect data about the location of existing streets, curbs, and rights of way in the City to facilitate digitization of streets?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q22" name="Q22"/> Yes I want authority
+              </div>
+            </div>
+          </section>
 
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 19</h4>
+                <h6>Do you want to collect data about the location of existing streets, curbs, and rights of way in the City to facilitate digitization of streets?Do you want to require shared AV operators to share data with the City?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q23" name="Q23"/> Yes I want authority
+              </div>
+            </div>
+          </section>
+
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 20</h4>
+                <h6>Will you digitize traffic signs, signals, markings, and other devices for the control of traffic on city streets?</h6>
+                <p></>
+                <p></>
+                  <input type="checkbox" id="Q24" name="Q24"/> Yes I want authority
+              </div>
+            </div>
+          </section>
 
           <section>
             <div style="text-align: center;">
@@ -481,6 +559,69 @@
     }
     if (q16.checked == false) {
         localStorage.setItem("Q16", "no");
+    }
+
+    // question 18
+    var q18 = document.getElementById("Q18");
+    if (q18.checked == true) {
+        localStorage.setItem("Q18", "yes");
+    }
+    if (q18.checked == false) {
+        localStorage.setItem("Q18", "no");
+    }
+
+    // question 19
+    var q19 = document.getElementById("Q19");
+    if (q19.checked == true) {
+        localStorage.setItem("Q19", "yes");
+    }
+    if (q19.checked == false) {
+        localStorage.setItem("Q19", "no");
+    }
+
+    // question 20
+    var q20 = document.getElementById("Q20");
+    if (q20.checked == true) {
+        localStorage.setItem("Q20", "yes");
+    }
+    if (q20.checked == false) {
+        localStorage.setItem("Q20", "no");
+    }
+
+    // question 21
+    var q21 = document.getElementById("Q21");
+    if (q21.checked == true) {
+        localStorage.setItem("Q21", "yes");
+    }
+    if (q21.checked == false) {
+        localStorage.setItem("Q21", "no");
+    }
+
+    // question 22
+    var q22 = document.getElementById("Q22");
+    if (q22.checked == true) {
+        localStorage.setItem("Q22", "yes");
+    }
+    if (q22.checked == false) {
+        localStorage.setItem("Q22", "no");
+    }
+
+    // question 23
+    var q23 = document.getElementById("Q23");
+    if (q23.checked == true) {
+        localStorage.setItem("Q23", "yes");
+    }
+    if (q23.checked == false) {
+        localStorage.setItem("Q23", "no");
+    }
+
+    // question 24
+    var q24 = document.getElementById("Q24");
+    if (q24.checked == true) {
+        localStorage.setItem("Q24", "yes");
+    }
+    if (q24.checked == false) {
+        localStorage.setItem("Q24", "no");
     }
 
     window.location = "https://bostonavthority.github.io/page2.html";
