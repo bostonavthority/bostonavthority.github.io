@@ -331,6 +331,48 @@
             </div>
         </section>
 
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 21 Recommendation</h4>
+                <p id="Q25">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 22 Recommendation</h4>
+                <p id="Q26">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 23 Recommendation</h4>
+                <p id="Q27">&nbsp;</p>
+                <p></p>
+                <p></p>
+                <p id="Q27d">&nbsp;</p>
+              </div>
+            </div>
+        </section>
+
+        <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+            <div class="mdl-card mdl-cell mdl-cell--12-col">
+              <div class="mdl-card__supporting-text">
+                <h4>Question 24 Recommendation</h4>
+                <p id="Q28">&nbsp;</p>
+                <p></p>
+              </div>
+            </div>
+        </section>
+
         </div>
         <p></p>
         <p></p>
@@ -572,6 +614,44 @@
     }
     if (q24 === "no") {
       document.getElementById("Q24").innerHTML = "You do not want to digitize traffic signs, signals, markings, and other devices for the control of traffic on city streets."
+    }
+
+    // Question 25
+    q25 = localStorage.getItem("Q25")
+    if (q25 === "yes") {
+      document.getElementById("Q25").innerHTML = "You have some authority to digitize traffic signs, signals, markings, and other devices for the control of traffic on state highways, but generally at least notification or approval of the State Department of Highways will be required. The State Department of Highways has the power to make and maintain highway signs, lights, signal systems, traffic devices, and parking meters. Other authorities cannot do this except with its written approval as to location, shape, size and color thereof, and except during such time as said approval is in effect. Cities can make rules, regulations, orders, ordinances or by-laws relative to or in connection with the erection or maintenance of signs, traffic control signals, traffic devices, school zones, parking meters or markings on any way within its control without department approval. See Mass. Gen. Laws ch. 85, § 2."
+    }
+    if (q25 === "no") {
+      document.getElementById("Q25").innerHTML = "You do not want to digitize traffic signs, signals, markings, and other devices for the control of traffic on state highways."
+    }
+
+    // Question 26
+    q26 = localStorage.getItem("Q26")
+    if (q26 === "yes") {
+      document.getElementById("Q26").innerHTML = "Boston might benefit from a state law that would preclude banning the AV technology in the region and guarantee certain minimum regulatory requirements throughout the Commonwealth. Such statewide AV law could, for example, impose certain minimum technical and insurance requirements, leaving cities the right to impose more comprehensive requirements. To achieve such a goal, Boston would need to lobby the state legislature. Note: It is not the case of Home Rule Petition, as the legislation enacted here would be general, not special. Some inspiration can be found in other states. For instance, the TNC regulation in New York State does not apply to New York City—the state legislature decided to leave the City of New York with leeway to regulate for-hire vehicles on their own. Additionally, Illinois has enacted regulation that preempts localities from banning AVs. Using these examples, and if it deems it beneficial, Boston could also seek a carve-out from all the forthcoming state legislation imposing AV requirements. This way, Boston would be able to assure that not a single locality in its metropolitan region will neither attempt to ban AVs nor impose restrictions and requirements that would have a preclusive effect on the development of AV technology. At the same time, however, the City will avoid having its hands tied and will be able to exercise leeway to regulate AVs in a way that would be the most beneficial to Boston. We also recommend that Boston should not seek a carve-out from any provisions preempting local bans on AVs—ensuring statewide application of such provision would underline the high priority of the entire AV industry both for Boston and for the state."
+    }
+    if (q26 === "no") {
+      document.getElementById("Q26").innerHTML = "You do not want want the state legislature to enact a comprehensive AV regulation."
+    }
+
+    // Question 27
+    q27 = localStorage.getItem("Q27")
+    if (q27 === "yes") {
+      document.getElementById("Q27").innerHTML = "You currently have no authority to exclude street railway cars or trackless trolley vehicles of the metropolitan transit authority from any street in the City to fully pursue an autonomous future. State law explicitly preempts the City of excluding street railway cars or trackless trolley vehicles of the metropolitan transit authority from any street in the City. See 1929 Mass. Acts ch. 263, § 2D."
+
+      document.getElementById("Q27d").innerHTML = "Amendment to strike out Section 2D, Chapter 263 of the Acts of 1929."
+    }
+    if (q27 === "no") {
+      document.getElementById("Q27").innerHTML = "You do not want to exclude street railway cars or trackless trolley vehicles of the metropolitan transit authority from any street in the City to fully pursue an autonomous future."
+    }
+
+    // Question 28
+    q28 = localStorage.getItem("Q28")
+    if (q28 === "yes") {
+      document.getElementById("Q28").innerHTML = "You have authority to remove AV’s that are parked or standing on streets in violation of existing regulations. The Boston Traffic Department may authorize the police commissioner to remove vehicles parked or standing on any part of a street, way, highway, road or parkway in violation of a rule or regulation which prohibits the parking or standing of all vehicles on such part at such time. Whoever violates such rule or regulation shall be liable to charge for the removal and storage of the vehicle as well as subject to punishment by fine, within the limits set out by the Commonwealth. See 1929 Mass. Acts ch. 263, § 2, para. 5. Moreover, the City can legally take possession of vehicles left standing on its streets for more than 72 hours. See Gen. Laws ch. 90, § 22C."
+    }
+    if (q28 === "no") {
+      document.getElementById("Q28").innerHTML = "You do not want to remove AV’s that are parked or standing on streets in violation of existing regulations."
     }
 
 
